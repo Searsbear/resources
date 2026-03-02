@@ -1,0 +1,31 @@
+Portail de données ouvertes de Montréal
+https://donnees.montreal.ca/
+Fichiers géographiques et statistiques
+
+Trouver votre station SPVM locale
+https://spvm.qc.ca/en/Search/Adresse
+Recherche par adresse
+
+Cadre OSINT
+https://osintframework.com/
+Ressource OSINT ouverte
+
+Ressource Hacker Target
+https://hackertarget.com/
+Trouvez des trucs, je sais pas, cherchez !
+
+Autres ressources pour des choses moins axées sur l'OSINT, mais tout de même utiles
+https://searsbear.github.io/
+Regardez ici !
+
+Disciplines de collecte de renseignements
+https://en.wikipedia.org/wiki/List_of_intelligence_gathering_disciplines
+En savoir plus
+
+Styles d'évaluation du renseignement
+https://en.wikipedia.org/wiki/Intelligence_assessment
+En savoir plus
+
+Générateur de code QR (ou tout autre code-barres)
+https://barcode.tec-it.com/en/QRCode
+Créer un code QR
