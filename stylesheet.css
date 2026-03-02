@@ -15,42 +15,34 @@
     color: #10b981;
     border-color: #10b981 !important; 
   }
-
 .cat-geo, .red { 
     color: #f43f5e; 
     border-color: #f43f5e !important; 
-  }
-      
+  }  
 .cat-data, .grey { 
     color: #94a3b8; 
     border-color: #94a3b8 !important; 
   }
-
 .cat-start, .orange { 
     color: #f59e0b; 
     border-color: #f59e0b !important; 
   }
-
 .cat-person, .purple { 
     color: #a855f7; 
     border-color: #a855f7 !important; 
   }
-
 .cat-report, .blue { 
     color: #3b82f6; 
     border-color: #3b82f6 !important; 
   }
-
 .cat-grocom, .yellow { 
     color: #FFFF00;
     border-color: #FFFF00 !important;
   }
-
 .cat-health, .cyan {
     color: turquoise;
     border-color: turquoise !important;
 }
-
 .cat-transport, .pink {
     color: #f4a2b0;
     border-color: #f4a2b0 !important;
@@ -68,6 +60,10 @@ summary.resource-header {
     list-style: none; /* Hides arrow in Chrome/Firefox */
     display: block;   /* Ensures it takes up the full width */
     outline: none;
+    background: #1e293b; /* Gives the main category a solid base */
+    padding: 15px;
+    margin-top: 10px;
+    border-left: 4px solid; /* Highlights the category color */
   }
 
 /* Hides the arrow in Safari */
@@ -90,8 +86,17 @@ details[open] summary.resource-header::after {
 
 /* Smooth out the spacing inside the dropdown */
 .dropdown-content {
-    padding-top: 10px;
+    background: #0f172a; /* Slightly darker than the header to create depth */
+    border-left: 1px solid #334155;
+    border-right: 1px solid #334155;
+    border-bottom: 1px solid #334155;
+    padding: 10px;
+    margin-bottom: 15px; /* Space before the next category starts */
   }
+
+.dropdown-content > :last-child {
+    margin-bottom: 0;
+}
 
 .nested-details {
     margin-bottom: 10px;
