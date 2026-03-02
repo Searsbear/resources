@@ -8,10 +8,10 @@ Consulter le rôle d'évaluation foncière
 
 ​Nombre d'unités de l'immeuble selon Postes Canada
 https://www.canadapost-postescanada.ca/ac/
-Rechercher en utilisant l'outil Adresse complète
+Rechercher en utilisant l'outil Adresse complete
 
 Outils Locatifs
-​	Registre des loyers
+	Registre des loyers
 	https://rentalregistry.ca/en/qc
 	Registre des prix des loyers actuels et passés
 ​	
@@ -23,14 +23,14 @@ Outils Locatifs
 	https://montreal.ca/en/topics/sanitation-maintenance-and-safety-dwellings
 	Trouver des informations sur la sécurité et l'entretien des bâtiments
 	
-	​Rate the Landlord
+	Rate the Landlord
 	https://ratethelandlord.org/
 	Trouver des évaluations et des avis sur les propriétaires
 	
-	​Locataire.info - Augmentation de loyer
+	Locataire.info - Augmentation de loyer
 	https://locataire.info/calcul/
 	Calculateur d'estimation d'augmentation de loyer
 	
-	​Jolicoeur 2026
+	Jolicoeur 2026
 	http://jolicoeurmtl.com/loyer
 	Calculateur d'estimation d'augmentation de loyer
