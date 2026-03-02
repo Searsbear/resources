@@ -1,73 +1,94 @@
 Éducaloi
-​Éducaloi
-https://educaloi.qc.ca/en/the-law-by-topic/
-Apprendre les lois et les règlements
-​Guide pour trouver des cliniques juridiques gratuites
-https://educaloi.qc.ca/wp-content/uploads/guide_info_sheet_2.pdf
-Liste PDF de l'aide juridique et des cliniques juridiques
-​Signalement de fraude
-​Signaler une fraude fiscale présumée au Canada
-https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/suspected-tax-cheating-in-canada-overview.html
-Signaler l'évasion fiscale
-​Signaler un cas de non-conformité à Revenu Québec
-https://www.revenuquebec.ca/en/one-mission-concrete-actions/ensuring-tax-compliance/reporting-non-compliance/general-framework-for-reporting-non-compliance/
-Signaler la non-conformité
-​Comment documenter la non-conformité pour Revenu Québec
-https://www.revenuquebec.ca/en/one-mission-concrete-actions/ensuring-tax-compliance/reporting-non-compliance/general-framework-for-reporting-non-compliance/how-to-document-non-compliance/
+​	Éducaloi
+	https://educaloi.qc.ca/en/the-law-by-topic/
+	Apprendre les lois et les règlements
+
+	​Guide pour trouver des cliniques juridiques gratuities
+	https://educaloi.qc.ca/wp-content/uploads/guide_info_sheet_2.pdf
+	Liste PDF de l'aide juridique et des cliniques juridiques
+
+Signalement de fraude
+	​Signaler une fraude fiscale présumée au Canada
+	https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/suspected-tax-cheating-in-canada-overview.html
+	Signaler l'évasion fiscale
+
+	​Signaler un cas de non-conformité à Revenu Québec
+	https://www.revenuquebec.ca/en/one-mission-concrete-actions/ensuring-tax-compliance/reporting-non-compliance/general-framework-for-reporting-non-compliance/
+	Signaler la non-conformité
+
+	​Comment documenter la non-conformité pour Revenu Québec
+	https://www.revenuquebec.ca/en/one-mission-concrete-actions/ensuring-tax-compliance/reporting-non-compliance/general-framework-for-reporting-non-compliance/how-to-document-non-compliance/
 Documenter la non-conformité
-​Lois de Montréal
-​Règlements municipaux de Montréal
-https://montreal.ca/en/reglements-municipaux/
-Rechercher des règlements et des règles
-​Conseils et ressources de Montréal
-https://montreal.ca/en/articles?mtl_content.articles.type.code=TIPS
-Conseils et ressources de Montréal
-​Problèmes à l'intérieur d'un logement à Montréal
-https://montreal.ca/en/services/issues-inside-dwelling
-Problèmes à l'intérieur d'un logement à Montréal
-​À quoi s'attendre lors de l'inspection d'un logement locatif
-https://montreal.ca/en/articles/rental-unit-inspection-what-to-expect-98463
-Conseils pour l'inspection d'un logement locatif
-​Demander l'inspection d'un logement
-https://montreal.ca/en/request-dwelling-inspection
-Demander une inspection de logement
-​Tribunal administratif du logement (TAL)
-​Formulaires du Tribunal administratif du logement (TAL)
-https://www.tal.gouv.qc.ca/en/forms
-Formulaires du TAL
-​Prendre rendez-vous avec un préposé aux renseignements au TAL
-https://www.tal.gouv.qc.ca/en/making-an-appointment-with-an-information-clerk
-Rendez-vous au TAL
-​Déposer une demande au tribunal du TAL
-https://www.tal.gouv.qc.ca/en/your-application-online/filing-an-application-to-the-tribunal
-Demande au TAL
+
+Lois de Montréal
+	​Règlements municipaux de Montréal
+	https://montreal.ca/en/reglements-municipaux/
+	Rechercher des règlements et des règles
+
+	​Conseils et ressources de Montréal
+	https://montreal.ca/en/articles?mtl_content.articles.type.code=TIPS
+	Conseils et ressources de Montréal
+
+	​Problèmes à l'intérieur d'un logement à Montréal
+	https://montreal.ca/en/services/issues-inside-dwelling
+	Problèmes à l'intérieur d'un logement à Montréal
+
+	​À quoi s'attendre lors de l'inspection d'un logement locative
+	https://montreal.ca/en/articles/rental-unit-inspection-what-to-expect-98463
+	Conseils pour l'inspection d'un logement locatif
+
+	​Demander l'inspection d'un logement
+	https://montreal.ca/en/request-dwelling-inspection
+	Demander une inspection de logement
+
+Tribunal administratif du logement (TAL)
+	​Formulaires du Tribunal administratif du logement (TAL)
+	https://www.tal.gouv.qc.ca/en/forms
+	Formulaires du TAL
+
+	​Prendre rendez-vous avec un préposé aux renseignements au TAL
+	https://www.tal.gouv.qc.ca/en/making-an-appointment-with-an-information-clerk
+	Rendez-vous au TAL
+
+	​Déposer une demande au tribunal du TAL
+	https://www.tal.gouv.qc.ca/en/your-application-online/filing-an-application-to-the-tribunal
+	Demande au TAL
+
 ​Aide juridique
-​Locataire.info
-https://locataire.info/
-Lois sur les droits des locataires
-​Juris Référence
-https://www.jurisreference.ca/en/
-Répertoire général de l'aide juridique
-​Info-Justice
-https://info-justice.ca/en/
-Aide juridique
-​Pour plus de ressources en aide juridique
-https://educaloi.qc.ca/wp-content/uploads/guide_info_sheet_2.pdf
-PLUS D'AIDE JURIDIQUE
+	​Locataire.info
+	https://locataire.info/
+	Lois sur les droits des locataires
+
+	​Juris Référence
+	https://www.jurisreference.ca/en/
+	Répertoire général de l'aide juridique
+
+	​Info-Justice
+	https://info-justice.ca/en/
+	Aide juridique
+
+	​Pour plus de ressources en aide juridique
+	https://educaloi.qc.ca/wp-content/uploads/guide_info_sheet_2.pdf
+	PLUS D'AIDE JURIDIQUE
+
 ​Aide au logement
-​Revenu Québec
-https://www.revenuquebec.ca/en/citizens/your-situation/low-income/shelter-allowance-program/
-Programme d'allocation de logement (soutien financier)
-​Gouvernement du Québec
-https://www.quebec.ca/en/housing-territory/renting/financial-assistance-for-housing
-Aide financière au logement
-​211 Québec
-https://www.211qc.ca/en/material-assistance-and-housing/housing-advocacy
-Répertoire des ressources en logement
+	​Revenu Québec
+	https://www.revenuquebec.ca/en/citizens/your-situation/low-income/shelter-allowance-program/
+	Programme d'allocation de logement (soutien financier)
+
+	​Gouvernement du Québec
+	https://www.quebec.ca/en/housing-territory/renting/financial-assistance-for-housing
+	Aide financière au logement
+
+	​211 Québec
+	https://www.211qc.ca/en/material-assistance-and-housing/housing-advocacy
+	Répertoire des ressources en logement
+
 ​Logement social
-​OMHM
-https://www.omhm.qc.ca/en/submit-application
-Demande et informations sur le logement social
-​FHCQ
-https://fhcq.coop/fr/cooperatives
-Recherche de coopératives, informations et ateliers
+	​OMHM
+	https://www.omhm.qc.ca/en/submit-application
+	Demande et informations sur le logement social
+
+	​FHCQ
+	https://fhcq.coop/fr/cooperatives
+	Recherche de coopératives, informations et ateliers
