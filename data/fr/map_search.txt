@@ -1,7 +1,6 @@
-Dual Maps for viewing, Street, Satellite, Regular in one tab
+Cartes doubles pour affichage simultané (rue, satellite et plan régulier)
 https://data.mashedworld.com/dualmaps/map.htm
-Search Map
-
-Live Transport Tracker
+Rechercher sur la carte
+​Suivi des transports en direct
 http://mobility.portal.geops.io/world.geops.transit
-Transport Map & Info
+Carte et informations sur le transport collectif
