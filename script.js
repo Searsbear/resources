@@ -60,7 +60,7 @@ const translations = {
         'qr-header': 'CODE QR',
         'bitchat-title': 'BITCHAT',
         'bitchat-desc': 'Pour un chat de texte de proximité utilisant le bluetooth sans connexion, sans numéro de téléphone, sans email, sans collecte de données et avec chiffrement de bout en bout. Idéal pour les locataires d\'un immeuble pour communiquer entre eux sans donner leurs informations à une application tierce.',
-        'loading': 'Chargement des ressources...'
+        'loading': 'Chargement des ressources...',
         '1': 'Transport',
         '2': 'Transport en commun',
         '3': 'Information sur le transport en commun',
@@ -249,4 +249,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-
