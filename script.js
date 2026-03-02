@@ -7,7 +7,53 @@ const translations = {
         'qr-header': 'QR CODE',
         'bitchat-title': 'BITCHAT',
         'bitchat-desc': 'For proximity text chat using bluetooth with no login, no phone number, no email, no data collection, and end to end encryption. Great for tenants in a building to communicate with each other without giving their info to a third party app.',
-        'loading': 'Loading resources...'
+        'loading': 'Loading resources...',
+        '1': 'Transport',
+        '2': 'Public Transit',
+        '3': 'Public Transit Information',
+        '4': 'Transport Options Map & Info',
+        '5': 'Official Maps & Info',
+        '6': 'rem.info | 1-833-REM-INFO',
+        '7': 'exo.quebec | (514) 287-8726',
+        '8': 'stlaval.ca | (450) 688-6520',
+        '9': 'rtl-longueuil.qc.ca',
+        '10': 'River Shuttles',
+        '11': 'Inter-City & International',
+        '12': 'Booking & Times',
+        '13': 'Berri-UQAM Station | (514) 842-2281',
+        '14': 'Regional Transport',
+        '15': 'Coach Canada/Megabus: Destinations across Canada',
+        '16': 'Greyhound Canada: Destinations across Canada',
+        '17': 'Galland: Serving the Laurentians',
+        '18': 'Intercar: Serving Saguenay, Lac-Saint-Jean, Charlevoix and Côte-Nord',
+        '19': 'Limocar: Serving Sherbrooke and the Eastern Townships',
+        '20': 'Orléans Express: Serving Québec City, Mauricie, Lower St. Lawrence, and the Gaspé Peninsula',
+        '21': 'Air & USA Rail',
+        '22': 'Montréal-Trudeau (YUL)',
+        '23': 'Amtrak (Adirondack)',
+        '24': 'Health & Medical Resources',
+        '25': 'Mental Health',
+        '26': 'TRACOM Crisis Centre',
+        '27': 'Info-Social 811',
+        '28': 'Mental health help and support resources',
+        '29': 'List of Resources',
+        '30': 'Suicide Prevention and Help Line',
+        '31': 'Call:',
+        '32': 'Call:',
+        '33': 'Text (SMS):',
+        '34': 'Chat:',
+        '46': 'Online',
+        '35': 'Health/Wellness Resources',
+        '36': 'Local community services centre (CLSC)',
+        '37': 'Find A CLSC',
+        '38': 'YESmontreal',
+        '39': 'Mental Health Resources',
+        '40': 'Canada Career Search (NOC)',
+        '41': 'National Occupational Classification',
+        '42': 'Quebec Trades & Occupations',
+        '43': 'Explore Careers',
+        '44': 'Apartment Maintenance:',
+        '45': 'the "Invisible Tasks" guide and apartment maintenance'
     },
     'fr': {
         'main-title': 'RESSOURCES LOCATAIRES',
@@ -15,6 +61,98 @@ const translations = {
         'bitchat-title': 'BITCHAT',
         'bitchat-desc': 'Pour un chat de texte de proximité utilisant le bluetooth sans connexion, sans numéro de téléphone, sans email, sans collecte de données et avec chiffrement de bout en bout. Idéal pour les locataires d\'un immeuble pour communiquer entre eux sans donner leurs informations à une application tierce.',
         'loading': 'Chargement des ressources...'
+        '1': 'Transport',
+
+'2': 'Transport en commun',
+
+'3': 'Information sur le transport en commun',
+
+'4': 'Carte et informations sur les options de transport',
+
+'5': 'Cartes et informations officielles',
+
+'6': 'rem.info | 1-833-REM-INFO',
+
+'7': 'exo.quebec | (514) 287-8726',
+
+'8': 'stlaval.ca | (450) 688-6520',
+
+'9': 'rtl-longueuil.qc.ca',
+
+'10': 'Navettes fluviales',
+
+'11': 'Interurbain et international',
+
+'12': 'Réservations et horaires',
+
+'13': 'Station Berri-UQAM | (514) 842-2281',
+
+'14': 'Transport régional',
+
+'15': 'Autocar Canada/Megabus : Destinations partout au Canada',
+
+'16': 'Greyhound Canada : Destinations partout au Canada',
+
+'17': 'Galland : Desservant les Laurentides',
+
+'18': 'Intercar : Desservant le Saguenay, le Lac-Saint-Jean, Charlevoix et la Côte-Nord',
+
+'19': 'Limocar : Desservant Sherbrooke et les Cantons-de-l\'Est',
+
+'20': 'Orléans Express : Desservant Québec, la Mauricie, le Bas-Saint-Laurent et la Gaspésie',
+
+'21': 'Transport aérien et ferroviaire vers les États-Unis',
+
+'22': 'Montréal-Trudeau (YUL)',
+
+'23': 'Amtrak (Adirondack)',
+
+'24': 'Ressources de santé et médicales',
+
+'25' : 'Santé mentale',
+
+'26' : 'Centre de crise TRACOM',
+
+'27' : 'Info-Social 811',
+
+'28' : 'Ressources d'aide et de soutien en santé mentale',
+
+'29' : 'Liste de ressources',
+
+'30' : 'Ligne d'écoute et de prévention du suicide',
+
+'31' : 'Appeler',
+
+'32' : 'Appeler',
+
+'33' : 'Texter (SMS)',
+
+'34' : 'Clavarder',
+
+'46' : 'En ligne',
+
+'35' : 'Ressources de santé et de bien-être',
+
+'36' : 'Centre local de services communautaires (CLSC)',
+
+'37' : 'Trouver un CLSC',
+
+'38' : 'YESmontreal',
+
+'39' : 'Ressources en santé mentale',
+
+'40' : 'Recherche de carrières Canada (CNP)',
+
+'41' : 'Classification nationale des professions',
+
+'42' : 'Métiers et professions du Québec',
+
+'43' : 'Explorer les carrières',
+
+'44' : 'Entretien d’appartements',
+
+'45' : 'Le guide des “tâches invisibles” et l’entretien d’appartements'
+    },
     }
 };
 
