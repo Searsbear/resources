@@ -88,9 +88,9 @@ const translations = {
         '25' : 'Santé mentale',
         '26' : 'Centre de crise TRACOM',
         '27' : 'Info-Social 811',
-        '28' : 'Ressources d'aide et de soutien en santé mentale',
+        '28' : 'Ressources d aide et de soutien en santé mentale',
         '29' : 'Liste de ressources',
-        '30' : 'Ligne d'écoute et de prévention du suicide',
+        '30' : 'Ligne d écoute et de prévention du suicide',
         '31' : 'Appeler',
         '32' : 'Appeler',
         '33' : 'Texter (SMS)',
@@ -105,8 +105,8 @@ const translations = {
         '41' : 'Classification nationale des professions',
         '42' : 'Métiers et professions du Québec',
         '43' : 'Explorer les carrières',
-        '44' : 'Entretien d’appartements',
-        '45' : 'Le guide des “tâches invisibles” et l’entretien d’appartements'
+        '44' : 'Entretien d appartements',
+        '45' : 'Le guide des “tâches invisibles” et l entretien d appartements'
     }
 };
 
