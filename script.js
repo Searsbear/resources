@@ -268,24 +268,33 @@ document.addEventListener('DOMContentLoaded', () => {
     updateStaticText(window.currentLang); // Run translation on load
     initTenantTools();
 
+    // 5a. Language Switching Logic
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', () => {
-            window.currentLang = btn.getAttribute('data-lang');
+            const newLang = btn.getAttribute('data-lang');
             
-            updateStaticText(window.currentLang); // Update static HTML text
-            initTenantTools(); // Update dynamic list
-            
-            if (typeof initContactTools === 'function') {
-                initContactTools();
+            // If it's a language button, update the app
+            if (newLang) {
+                window.currentLang = newLang;
+                
+                updateStaticText(window.currentLang); 
+                initTenantTools(); 
+                
+                if (typeof initContactTools === 'function') {
+                    initContactTools();
+                }
+
+                // Visual feedback for active button
+                document.querySelectorAll('.lang-btn').forEach(b => b.style.borderColor = '#334155');
+                btn.style.borderColor = '#6366f1';
             }
-
-            document.querySelectorAll('.lang-btn').forEach(b => b.style.borderColor = '#334155');
-            btn.style.borderColor = '#6366f1';
-
-const downloadBtn = document.getElementById('download-all-btn');
-    if (downloadBtn) {
-        downloadBtn.addEventListener('click', downloadAllResources);
-    
         });
     });
+
+    // 5b. Download Button Logic (stays outside the loop)
+    const downloadBtn = document.getElementById('download-all-btn');
+    if (downloadBtn) {
+        downloadBtn.addEventListener('click', downloadAllResources);
+    }
 });
+
