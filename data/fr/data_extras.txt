@@ -29,3 +29,7 @@ En savoir plus
 Générateur de code QR (ou tout autre code-barres)
 https://barcode.tec-it.com/en/QRCode
 Créer un code QR
+
+Générateur simplifié de fichiers de planning hebdomadaire
+https://searsbear.github.io/Calendar/
+Générez des fichiers ICS pour une planification simplifiée
