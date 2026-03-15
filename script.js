@@ -3,7 +3,7 @@ window.currentLang = 'en';
 
 const translations = {
     'en': {
-        'main-title': 'TENANT RESOURCES',
+        'main-title': 'WE TOD RESOURCES+TOOLS',
         'qr-header': 'QR CODE',
         'bitchat-title': 'BITCHAT',
         'bitchat-desc': 'For proximity text chat using bluetooth with no login, no phone number, no email, no data collection, and end to end encryption. Great for tenants in a building to communicate with each other without giving their info to a third party app.',
