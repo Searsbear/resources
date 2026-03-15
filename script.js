@@ -56,7 +56,7 @@ const translations = {
         '45': 'the "Invisible Tasks" guide and apartment maintenance'
     },
     'fr': {
-        'main-title': 'RESSOURCES LOCATAIRES',
+        'main-title': 'OUI TOD UTILES+RESSOURCES LOCATAIRES',
         'qr-header': 'CODE QR',
         'bitchat-title': 'BITCHAT',
         'bitchat-desc': 'Pour un chat de texte de proximité utilisant le bluetooth sans connexion, sans numéro de téléphone, sans email, sans collecte de données et avec chiffrement de bout en bout. Idéal pour les locataires d\'un immeuble pour communiquer entre eux sans donner leurs informations à une application tierce.',
