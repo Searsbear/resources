@@ -295,11 +295,29 @@
         .btn:active { background: var(--neon-green); color: #000; }
         #up { grid-area: up; } #down { grid-area: down; } #left { grid-area: left; } #right { grid-area: right; }
         body, .gay-rainbow {
-            background: linear-gradient(to right, #F94D4D, #F9664D, #F97E4D, #F9974D, #F9B04D, #F9C84D, #F9E14D, #F9F94D, #E1F94D, #C8F94D, #B0F94D, #97F94D, #7EF94D, #66F94D, #4DF94D, #4DF966, #4DF97E, #4DF997, #4DF9B0, #4DF9C8, #4DF9E1, #4DF9F9, #4DE1F9, #4DC8F9, #4DB0F9, #4D97F9, #4D7EF9, #4D66F9, #4D4DF9, #664DF9, #7E4DF9, #974DF9, #B04DF9, #C84DF9, #E14DF9, #F94DF9, #F94DE1, #F94DC8, #F94DB0, #F94D97, #F94D7E, #F94D4D);
-            -webkit-background-clip: text; background-clip: text; color: transparent;
-            background-size: 200% auto; animation: rainbow 3s linear infinite;
-        }
-        @keyframes rainbow { 0% { background-position: 0 0; } 100% { background-position: 200% center; } }
+    /* Use radial-gradient centered at the middle */
+     background: radial-gradient(circle, #F94D4D, #F9664D, #F97E4D, #F9974D, #F9B04D, #F9C84D, #F9E14D, #F9F94D, #E1F94D, #C8F94D, #B0F94D, #97F94D, #7EF94D, #66F94D, #4DF94D, #4DF966, #4DF97E, #4DF997, #4DF9B0, #4DF9C8, #4DF9E1, #4DF9F9, #4DE1F9, #4DC8F9, #4DB0F9, #4D97F9, #4D7EF9, #4D66F9, #4D4DF9, #664DF9, #7E4DF9, #974DF9, #B04DF9, #C84DF9, #E14DF9, #F94DF9, #F94DE1, #F94DC8, #F94DB0, #F94D97, #F94D7E, #F94D4D);
+    
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    
+    /* Start with a smaller background size */
+    background-size: 100% 100%;
+    animation: rainbow-radiate 3s linear infinite;
+}
+
+@keyframes rainbow-radiate {
+    0% {
+        background-size: 100% 100%;
+    }
+    100% {
+        /* Expanding the size creates the "moving outward" illusion */
+        background-size: 300% 300%;
+    }
+}
+
     </style>
 </head>
 <body>
