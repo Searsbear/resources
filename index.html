@@ -295,7 +295,6 @@
         .btn:active { background: var(--neon-green); color: #000; }
         #up { grid-area: up; } #down { grid-area: down; } #left { grid-area: left; } #right { grid-area: right; }
         body, .gay-rainbow {
-    /* Your 42 colors, but wrapped in a smooth, continuous loop */
     background: radial-gradient(circle at center, 
         #F94D4D, #F9664D, #F97E4D, #F9974D, #F9B04D, #F9C84D, #F9E14D, #F9F94D, 
         #E1F94D, #C8F94D, #B0F94D, #97F94D, #7EF94D, #66F94D, #4DF94D, #4DF966, 
@@ -305,30 +304,33 @@
         #F94D7E, #F94D4D
     );
 
-    /* Background fills the entire viewport */
-    background-size: 400% 400%;
+    height: 100vh;
+    width: 100vw;
     background-attachment: fixed;
     
-    /* Hardware acceleration */
-    transform: translateZ(0);
+    /* Ensure the background is large enough to animate its position */
+    background-size: 200% 200%;
+    background-position: center;
+
+    /* 'linear' prevents the 'back and forth' easing feel */
+    animation: infinite-rotation 10s linear infinite;
     
-    animation: background-pulse 15s linear infinite;
+    will-change: filter, background-position;
 }
 
-@keyframes background-pulse {
+@keyframes infinite-rotation {
     0% {
-        background-position: 0% 0%;
-        filter: hue-rotate(0deg) blur(20px);
-    }
-    50% {
-        /* Moving the position creates a "lava lamp" flow effect */
-        background-position: 100% 100%;
+        filter: hue-rotate(0deg);
+        /* Slight orbital movement to prevent it from looking static */
+        background-position: 50% 50%;
     }
     100% {
-        background-position: 0% 0%;
-        filter: hue-rotate(360deg) blur(20px);
+        /* Rotating 360 degrees returns exactly to the start color */
+        filter: hue-rotate(360deg);
+        background-position: 50% 50%;
     }
 }
+
 
 
     </style>
