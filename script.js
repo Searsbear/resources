@@ -309,7 +309,6 @@ secretWord.addEventListener("click", () => {
     audio.play();
   } else {
     audio.pause();
-    // Optional: Reset to beginning so it restarts on next click
     audio.currentTime = 0; 
   }
 });
