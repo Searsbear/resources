@@ -344,7 +344,7 @@ if (trigger3 && audio3) {
             audio3.currentTime = 0;
         }
     });
-
+}
 
 
 
