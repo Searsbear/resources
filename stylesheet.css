@@ -291,6 +291,19 @@ textarea {
   user-select: none; 
 }
 
+#secret-trigger2 {
+  /* Keeps the cursor looking like a text selector, not a link */
+  cursor: text; 
+  /* Ensures no accidental blue outlines if someone double-clicks it */
+  user-select: none; 
+}
+
+#secret-trigger3 {
+  /* Keeps the cursor looking like a text selector, not a link */
+  cursor: text; 
+  /* Ensures no accidental blue outlines if someone double-clicks it */
+  user-select: none; 
+}
 
 
 
