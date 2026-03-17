@@ -209,7 +209,19 @@
         </details>
         <details class="resource-group">
             <summary class="resource-header" style="color: white;" data-i18n="qr-header">QR CODE</summary>
-            <img src="OSINT QR.jpg" alt="fucking qr code didnt load dammit" style="max-width: 100%; height: auto; display: block;">
+            <img id="secret=trigger5" src="OSINT QR.jpg" alt="fucking qr code didnt load dammit" style="max-width: 100%; height: auto; display: block;">
+
+
+<div id="gameOverlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.98); z-index:99999; flex-direction: column;">
+    <div style="padding: 15px; text-align: right; background: #000;">
+        <button onclick="closeGame()" style="color:#00ff88; background:none; border:1px solid #00ff88; padding:8px 15px; cursor:pointer; font-family:monospace; font-weight:bold; border-radius:4px;">
+            EXIT TERMINAL [X]
+        </button>
+    </div>
+    <iframe id="gameFrame" style="flex: 1; border:none; width:100%; height:100%;"></iframe>
+</div>
+
+
         </details>
         <a href="https://play.google.com/store/apps/details?id=com.bitchat.droid&hl=en_CA" class="resource-item" target="_blank">
             <strong class="gay-rainbow" data-i18n="bitchat-title">BITCHAT</strong><br>
@@ -240,4 +252,136 @@
 </audio>
 
 </body>
+
+<script>
+(function() {
+    let clickCount = 0;
+    let clickTimer;
+    // Updated ID reference
+    const trigger = document.getElementById('secret-trigger5');
+
+    if (trigger) {
+        trigger.addEventListener('click', () => {
+            clickCount++;
+            clearTimeout(clickTimer);
+            clickTimer = setTimeout(() => { clickCount = 0; }, 800); 
+
+            if (clickCount === 3) {
+                clickCount = 0;
+                launchNeonSnake();
+            }
+        });
+    }
+
+    function launchNeonSnake() {
+        const overlay = document.getElementById('gameOverlay');
+        const frame = document.getElementById('gameFrame');
+        
+        const snakeGameSource = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style>
+        :root { --neon-green: #00ff88; --neon-pink: #ff0055; }
+        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+        body { width: 100%; height: 100vh; background: #000; overflow: hidden; display: flex; flex-direction: column; font-family: monospace; }
+        #game-container { flex: 1; display: flex; align-items: center; justify-content: center; position: relative; }
+        #score-display { position: absolute; top: 10px; left: 10px; font-size: 20px; z-index: 10; }
+        canvas { border: 1px solid #222; max-width: 95vw; max-height: 50vh; background: #000; }
+        .controls { height: 40vh; display: grid; grid-template-areas: ". up ." "left . right" ". down ."; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; gap: 10px; padding: 20px; background: #080808; }
+        .btn { background: #111; border: 1px solid #333; border-radius: 15px; color: var(--neon-green); font-size: 30px; display: flex; align-items: center; justify-content: center; }
+        .btn:active { background: var(--neon-green); color: #000; }
+        #up { grid-area: up; } #down { grid-area: down; } #left { grid-area: left; } #right { grid-area: right; }
+        .gay-rainbow {
+            background: linear-gradient(to right, #F94D4D, #F9B04D, #F9F94D, #4DF94D, #4D97F9, #B04DF9, #F94DF9);
+            -webkit-background-clip: text; background-clip: text; color: transparent;
+            background-size: 200% auto; animation: rainbow 3s linear infinite;
+        }
+        @keyframes rainbow { 0% { background-position: 0 0; } 100% { background-position: 200% center; } }
+    </style>
+</head>
+<body>
+    <div id="score-display" class="gay-rainbow">SCORE: <span id="s-val">00</span></div>
+    <div id="game-container"><canvas id="snakeGame" width="400" height="400"></canvas></div>
+    <div class="controls">
+        <div id="up" class="btn">▲</div><div id="left" class="btn">◀</div>
+        <div id="right" class="btn">▶</div><div id="down" class="btn">▼</div>
+    </div>
+    <script>
+        const canvas = document.getElementById("snakeGame");
+        const ctx = canvas.getContext("2d");
+        const sVal = document.getElementById("s-val");
+        const gridSize = 20, tileCount = 20;
+        let snake, food, dx, dy, score, gameActive;
+
+        function init() {
+            snake = [{x: 10, y: 10}]; food = {x: 5, y: 5};
+            dx = 0; dy = 0; score = 0; gameActive = true;
+            sVal.innerText = "00";
+        }
+
+        function gameLoop() {
+            if (!gameActive) return;
+            update(); draw();
+            setTimeout(gameLoop, 100);
+        }
+
+        function update() {
+            if (dx === 0 && dy === 0) return;
+            const head = {x: snake[0].x + dx, y: snake[0].y + dy};
+            if (head.x < 0) head.x = tileCount-1; if (head.x >= tileCount) head.x = 0;
+            if (head.y < 0) head.y = tileCount-1; if (head.y >= tileCount) head.y = 0;
+            if (snake.some(p => p.x === head.x && p.y === head.y)) {
+                gameActive = false;
+                alert("CRITICAL FAILURE. SCORE: " + score);
+                init();
+                gameLoop();
+                return;
+            }
+            snake.unshift(head);
+            if (head.x === food.x && head.y === food.y) {
+                score++; sVal.innerText = score.toString().padStart(2, '0');
+                food = {x: Math.floor(Math.random()*tileCount), y: Math.floor(Math.random()*tileCount)};
+            } else { snake.pop(); }
+        }
+
+        function draw() {
+            ctx.fillStyle = "#000"; ctx.fillRect(0,0,400,400);
+            ctx.fillStyle = "#ff0055"; ctx.beginPath();
+            ctx.arc(food.x*20+10, food.y*20+10, 7, 0, Math.PI*2); ctx.fill();
+            snake.forEach((p, i) => {
+                ctx.fillStyle = i === 0 ? "#fff" : "#00ff88";
+                ctx.fillRect(p.x*20+1, p.y*20+1, 18, 18);
+            });
+        }
+
+        function setDir(x, y) { if ((x===-dx && dx!==0)||(y===-dy && dy!==0)) return; dx=x; dy=y; }
+        document.getElementById('up').onpointerdown = (e) => { e.preventDefault(); setDir(0,-1); };
+        document.getElementById('down').onpointerdown = (e) => { e.preventDefault(); setDir(0,1); };
+        document.getElementById('left').onpointerdown = (e) => { e.preventDefault(); setDir(-1,0); };
+        document.getElementById('right').onpointerdown = (e) => { e.preventDefault(); setDir(1,0); };
+
+        init(); gameLoop();
+    <\/script>
+</body>
+</html>`;
+
+        const blob = new Blob([snakeGameSource], { type: 'text/html' });
+        frame.src = URL.createObjectURL(blob);
+        overlay.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; 
+    }
+
+    window.closeGame = function() {
+        const overlay = document.getElementById('gameOverlay');
+        const frame = document.getElementById('gameFrame');
+        overlay.style.display = 'none';
+        frame.src = "about:blank"; 
+        document.body.style.overflow = 'auto'; 
+    };
+})();
+</script>
+
 </html>
