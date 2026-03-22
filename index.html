@@ -274,6 +274,46 @@
 </div>
 </div>
 
+
+<div id="ghostContainer" style="position: fixed; bottom: 0; left: 0; width: 100%; height: 20px; opacity: 0; background: #000; transition: opacity 0.3s;">
+    <select id="secretSelector" style="width: 150px; margin: 0 auto; display: block;">
+        <option value="" disabled selected>Select...</option>
+        <option value="show">Reveal Video</option>
+        <option value="hide">Hide Menu</option>
+    </select>
+</div>
+
+<video id="secretVideo" width="400" style="display: none; position: fixed; bottom: 50px; left: 50%; transform: translateX(-50%); border: 2px solid white; box-shadow: 0 0 20px rgba(0,0,0,0.5);" controls>
+    <source src="suicide.mp4" type="video/mp4">
+</video>
+
+<script>
+    const ghost = document.getElementById('ghostContainer');
+    const selector = document.getElementById('secretSelector');
+    const video = document.getElementById('secretVideo');
+
+    // Reveal the dropdown on double-click at the bottom edge
+    ghost.addEventListener('dblclick', () => {
+        ghost.style.opacity = '1';
+    });
+
+    // Handle selection
+    selector.addEventListener('change', () => {
+        if (selector.value === 'show') {
+            video.style.display = 'block';
+            video.play();
+        }
+        // Hide the dropdown again after choice
+        ghost.style.opacity = '0';
+        selector.selectedIndex = 0;
+    });
+</script>
+
+
+
+
+
+
 <audio id="easterEggAudio4">
   <source src="Idk.mp3" type="audio/mpeg">
 </audio>
