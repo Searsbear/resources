@@ -276,40 +276,57 @@
 <br>
 <br>
 
-<div id="secretMenu" style="position: fixed; bottom: -50px; left: 0; width: 100%; height: 50px; background: #222; display: flex; align-items: center; justify-content: center; transition: bottom 0.3s ease; z-index: 9999;">
-    <button id="playBtn" style="background: #444; color: white; border: 1px solid #666; padding: 5px 15px; cursor: pointer;">
-        ▶ Play Secret Video
+
+
+<div id="secretMenu" style="position: fixed; bottom: -60px; left: 0; width: 100%; height: 60px; background: #111; display: flex; align-items: center; justify-content: center; transition: bottom 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); z-index: 10000; border-top: 2px solid #00ff88;">
+    <button id="playBtn" style="background: #222; color: #00ff88; border: 1px solid #00ff88; padding: 10px 20px; cursor: pointer; font-family: monospace; font-weight: bold; border-radius: 4px;">
+        ▶ ACCESS PROTECTED VIDEO
     </button>
 </div>
 
-<video id="hiddenVideo" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 600px; box-shadow: 0 0 50px #000;" controls>
-    <source src="suicide.mp4" type="video/mp4">
-</video>
+<div id="videoContainer" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 10001; align-items: center; justify-content: center;">
+    <span onclick="this.parentElement.style.display='none'; document.getElementById('hiddenVideo').pause();" style="position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; cursor: pointer;">&times;</span>
+    <video id="hiddenVideo" style="width: 90%; max-width: 700px; border: 1px solid #444;" controls>
+        <source src="suicide.mp4" type="video/mp4">
+    </video>
+</div>
 
-<div id="hitbox" style="position: fixed; bottom: 0; left: 0; width: 100%; height: 15px; cursor: default; z-index: 9998;"></div>
+<div id="hitbox" style="position: fixed; bottom: 0; left: 0; width: 100%; height: 20px; z-index: 9999; cursor: default;"></div>
+
+
 
 <script>
-    const hitbox = document.getElementById('hitbox');
-    const menu = document.getElementById('secretMenu');
-    const video = document.getElementById('hiddenVideo');
-    const playBtn = document.getElementById('playBtn');
+    const hb = document.getElementById('hitbox');
+    const sMenu = document.getElementById('secretMenu');
+    const sVideo = document.getElementById('hiddenVideo');
+    const vCont = document.getElementById('videoContainer');
+    const pBtn = document.getElementById('playBtn');
 
-    // 1. Double-click the invisible 15px strip at the bottom to slide the menu up
-    hitbox.addEventListener('dblclick', () => {
-        menu.style.bottom = '0px'; 
+    // 1. Double-click the very bottom edge to slide the menu up
+    hb.addEventListener('dblclick', (e) => {
+        e.preventDefault();
+        sMenu.style.bottom = '0px';
+        
+        // Auto-hide the menu after 5 seconds if no action is taken
+        setTimeout(() => {
+            if (vCont.style.display !== 'flex') {
+                sMenu.style.bottom = '-60px';
+            }
+        }, 5000);
     });
 
-    // 2. Click the button to show the video and hide the menu
-    playBtn.addEventListener('click', () => {
-        video.style.display = 'block';
-        video.play();
-        menu.style.bottom = '-50px'; // Hide menu again
+    // 2. Click the button to launch the video
+    pBtn.addEventListener('click', () => {
+        vCont.style.display = 'flex';
+        sVideo.play();
+        sMenu.style.bottom = '-60px'; // Hide the tray once video starts
     });
 
-    // Optional: Clicking the video hides it again
-    video.addEventListener('click', () => {
-        if (video.paused) {
-            video.style.display = 'none';
+    // 3. Close video if clicking outside the player
+    vCont.addEventListener('click', (e) => {
+        if (e.target === vCont) {
+            vCont.style.display = 'none';
+            sVideo.pause();
         }
     });
 </script>
