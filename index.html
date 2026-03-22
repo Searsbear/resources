@@ -278,8 +278,7 @@
 
 
 
-
-<details id="secretDropdown" class="resource-group" style="position: fixed; bottom: 0; left: 0; width: 100%; z-index: 10000; opacity: 0; transition: opacity 0.3s;">
+<details id="secretDropdown" class="resource-group" style="position: fixed; bottom: 0; left: 0; width: 100%; z-index: 10000; opacity: 0; pointer-events: none; transition: opacity 0.3s;">
     <summary class="resource-header" style="background: #111; color: #00ff88; border-top: 1px solid #00ff88; text-align: center;">
         REVEALED: PROTECTED CONTENT
     </summary>
@@ -288,14 +287,13 @@
             <source src="suicide.mp4" type="video/mp4">
         </video>
         <br>
-        <button onclick="document.getElementById('secretDropdown').open = false; document.getElementById('secretDropdown').style.opacity = '0';" style="margin-top:10px; background:none; border:1px solid #ff0055; color:#ff0055; padding:5px 10px; cursor:pointer;">
+        <button onclick="const sd=document.getElementById('secretDropdown'); sd.open=false; sd.style.opacity='0'; sd.style.pointerEvents='none';" style="margin-top:10px; background:none; border:1px solid #ff0055; color:#ff0055; padding:5px 10px; cursor:pointer;">
             Close & Hide
         </button>
     </div>
 </details>
-</div>
 
-<div id="hitbox" style="position: fixed; bottom: 0; left: 0; width: 100%; height: 30px; z-index: 10001; cursor: default;"></div>
+<div id="hitbox" style="position: fixed; bottom: 0; left: 0; width: 100%; height: 40px; z-index: 10001; pointer-events: auto; background: transparent;"></div>
 <script>
     const hb = document.getElementById('hitbox');
     const sd = document.getElementById('secretDropdown');
@@ -305,11 +303,11 @@
     const handleTrigger = (e) => {
         const now = new Date().getTime();
         const timesince = now - lastTap;
-        
+
         if (timesince < 300 && timesince > 0) {
             e.preventDefault();
-            // Toggle visibility
             sd.style.opacity = '1';
+            sd.style.pointerEvents = 'auto'; // Make it clickable
             sd.open = true; 
         }
         lastTap = now;
@@ -318,14 +316,15 @@
     hb.addEventListener('touchstart', handleTrigger);
     hb.addEventListener('dblclick', handleTrigger);
 
-    // Auto-pause video if the user closes the dropdown manually
     sd.addEventListener('toggle', () => {
         if (!sd.open) {
             sv.pause();
             sd.style.opacity = '0';
+            sd.style.pointerEvents = 'none'; // Make it ghost-like again
         }
     });
 </script>
+
 
 
 <audio id="easterEggAudio4">
