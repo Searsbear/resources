@@ -296,6 +296,24 @@
 </div>
 
 
+<audio id="easterEggAudio4">
+  <source src="Idk.mp3" type="audio/mpeg">
+</audio>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then(reg => console.log('OSINT Cache Active:', reg.scope))
+        .catch(err => console.log('Service Worker failed:', err));
+    });
+  }
+</script>
+
+</body>
+
+
+
+
 <script>
     const hb = document.getElementById('hitbox');
     const sd = document.getElementById('secretDropdown');
@@ -326,28 +344,6 @@
         }
     });
 </script>
-
-
-
-
-
-
-
-
-<audio id="easterEggAudio4">
-  <source src="Idk.mp3" type="audio/mpeg">
-</audio>
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('./sw.js')
-        .then(reg => console.log('OSINT Cache Active:', reg.scope))
-        .catch(err => console.log('Service Worker failed:', err));
-    });
-  }
-</script>
-
-</body>
 
 
 <script>
