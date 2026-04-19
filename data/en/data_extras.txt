@@ -31,5 +31,5 @@ https://barcode.tec-it.com/en/QRCode
 Make a QR Code
 
 Simple Weekly Schedule File Generator
-https://searsbear.github.io/Calendar/
+https://searsbear.github.io/scheduling/
 Generate ics files for simpler plannning
